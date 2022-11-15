@@ -1,0 +1,35 @@
+.dropdown-wrapper {
+  :global(.btn.btn-primary) {
+    background-color: #fff;
+    position: relative;
+
+    color: var(--text-primary);
+
+    border: none;
+
+    padding: 5px 21px;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1.4px;
+      border-radius: 16px;
+      background: var(--primary-gradient);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      -webkit-mask-composite: exclude;
+    }
+  }
+
+  :global(.dropdown-menu) {
+    border-radius: 16px;
+
+    z-index: 9999999;
+  }
+}

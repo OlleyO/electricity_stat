@@ -1,0 +1,40 @@
+@import "../../styles/mixins";
+
+.header {
+  @include flex(row, 0px, normal, space-between);
+
+  margin-bottom: 19px;
+}
+
+.left,
+.right {
+  @include flex(row, 0px, center, normal);
+}
+
+.left {
+  @include flex(row, 35px, center, normal);
+}
+
+.right {
+  @include flex(row, 12px, center, normal);
+}
+
+.temperature {
+  font-size: 60px;
+  color: var(--text-primary);
+
+  font-weight: 600;
+
+  .celcius {
+    vertical-align: text-top;
+    font-size: 18px;
+  }
+}
+
+.menu-icon {
+  fill: rgba(83, 198, 234, 1);
+
+  &:hover {
+    fill: rgb(77, 175, 205);
+  }
+}

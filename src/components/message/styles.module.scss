@@ -1,0 +1,41 @@
+@import "../../styles/mixins";
+
+.message {
+  background-color: #fff;
+  font-size: 14px;
+
+  padding: 11px 11px 9px 15px;
+
+  box-shadow: var(--primary-box-shadow);
+
+  border-radius: 8px;
+
+  flex: 1;
+
+  @include flex(row, 0px, center, space-between);
+}
+
+.body {
+  @include flex(column, 10px, normal, space-between);
+}
+
+.content {
+  color: #78859a;
+  font-weight: 600;
+}
+
+.date {
+  color: var(--text-primary);
+
+  font-size: 12px;
+
+  @include flex(row, 5px);
+}
+
+.arrow {
+  fill: #b6bfce;
+
+  &:hover {
+    fill: var(--primary);
+  }
+}

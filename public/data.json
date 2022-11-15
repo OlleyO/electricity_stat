@@ -1,0 +1,46 @@
+{
+  "temperature": 14,
+  "gasUsage": {
+    "graphData": [
+      { "date": "Ja", "targetAmount": 146, "currentUsage": 122 },
+      { "date": "Fe", "targetAmount": 277, "currentUsage": 220 },
+      { "date": "Ma", "targetAmount": 215, "currentUsage": 263 },
+      { "date": "Ap", "targetAmount": 271, "currentUsage": 243 },
+      { "date": "Ma", "targetAmount": 176, "currentUsage": 148 },
+      { "date": "Ju", "targetAmount": 256, "currentUsage": 114 },
+      { "date": "Ji", "targetAmount": 272, "currentUsage": 128 },
+      { "date": "Au", "targetAmount": 181, "currentUsage": 264 },
+      { "date": "Se", "targetAmount": 139, "currentUsage": 141 },
+      { "date": "Oc", "targetAmount": 294, "currentUsage": 216 },
+      { "date": "No", "targetAmount": 115, "currentUsage": 226 },
+      { "date": "De", "targetAmount": 263, "currentUsage": 174 }
+    ],
+    "total": 62.5,
+    "monthly": 41.6
+  },
+  "electricUsage": {
+    "graphData": [
+      { "date": "Ja", "targetAmount": 142, "currentUsage": 287 },
+      { "date": "Fe", "targetAmount": 225, "currentUsage": 154 },
+      { "date": "Ma", "targetAmount": 260, "currentUsage": 277 },
+      { "date": "Ap", "targetAmount": 271, "currentUsage": 175 },
+      { "date": "Ma", "targetAmount": 274, "currentUsage": 175 },
+      { "date": "Ju", "targetAmount": 226, "currentUsage": 226 },
+      { "date": "Ji", "targetAmount": 142, "currentUsage": 205 },
+      { "date": "Au", "targetAmount": 184, "currentUsage": 171 },
+      { "date": "Se", "targetAmount": 171, "currentUsage": 167 },
+      { "date": "Oc", "targetAmount": 215, "currentUsage": 260 },
+      { "date": "No", "targetAmount": 209, "currentUsage": 169 },
+      { "date": "De", "targetAmount": 197, "currentUsage": 238 }
+    ],
+    "total": 95,
+    "monthly": 157
+  },
+  "account": { "balance": 55 },
+  "messages": [
+    { "message": "Hello, how are you?", "date": "2020-05-05 20:45:00" },
+    { "message": "I'm fine, thank you!", "date": "2020-05-04 02:30:00" },
+    { "message": "How are you?", "date": "2020-05-02" }
+  ],
+  "tariff": { "price": 6500, "priceChange": 250 }
+}

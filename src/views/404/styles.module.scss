@@ -1,0 +1,52 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: var(--primary-gradient);
+
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+  }
+
+  h1,
+  p {
+    color: #fff;
+  }
+
+  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

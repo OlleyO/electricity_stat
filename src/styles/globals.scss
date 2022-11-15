@@ -1,0 +1,197 @@
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
+}
+
+q {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--page-bg);
+}
+
+:root {
+  --page-bg: #fafbfc;
+  --primary: #53c6ea;
+  --target-amount-fill: #4aceb7;
+  --target-amount-stroke: #e4f8f4;
+  --current-usage-fill: #4bc2e3;
+  --current-usage-stroke: #e4f6fb;
+  --primary-gradient: linear-gradient(
+    90deg,
+    #4bc2e3,
+    #41c4df,
+    #38c7db,
+    #33c8d5,
+    #33cacf,
+    #38ccc7,
+    #40cdbf,
+    #4aceb7
+  );
+
+  --reverse-gradenient: linear-gradient(
+    90deg,
+    #4aceb7,
+    #40cdbf,
+    #38ccc7,
+    #33cacf,
+    #33c8d5,
+    #38c7db,
+    #41c4df,
+    #4bc2e3
+  );
+
+  --text-primary: #b6bfce;
+  --text-label: #78859a;
+
+  --primary-box-shadow: #006efd2b 0px 0px 10px 1px;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: url("#gradient-primary-fill") !important;
+}
+
+.recharts-cartesian-axis {
+  text {
+    fill: var(--text-primary);
+  }
+}
